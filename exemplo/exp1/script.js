@@ -13,7 +13,7 @@
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------
 
-// *Crie um algoritimo que leia um vetor de 5 números inteiros e mostre-os *//
+// 1-*Crie um algoritimo que leia um vetor de 5 números inteiros e mostre-os *//
 
 // let numeros =[]
 
@@ -32,10 +32,10 @@
 
 // console.log(numeros);
 
-// ------------------------------------------------------------------------------------------------------------------------------------------------
+/*------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-// Crie um algoritiomo que leia 4 notas, mostre as notas e a média na tela
-
+// 2-Crie um algoritiomo que leia 4 notas, mostre as notas e a média na tela
+/*
 let notas = [];
 for (let i = 0; i < 4; i++) {
     let nota = prompt(`Informe a ${i + 1}° nota:`);
@@ -57,3 +57,35 @@ for (let j = 0; j <quant; j++) {
 media = soma/quant
 
 alert(`A média das notas informadas é: ${media.toFixed(2)}`)
+*/
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+// 3-Crie um algoritimo que leia um vetor de 10 letras, e diga quantas consoantes foram lidas e mostre essas contoantes.
+
+let letras = [];
+for (let i = 0; i < 10; i++) {
+    let letra = prompt(`Digite a ${i + 1}° letra:`);
+    while (!isNaN(letra) || letra.trim() == '' || letra.length !== 1) {
+        alert("Letra Invalida!");
+        letra = prompt(`Informe a ${i + 1}° letra novamete:`)
+    }
+    letras.push(letra);
+}
+
+let msg = ""
+let quantidade = 0;
+for (let j = 0; j < letras.length; j++) {
+    let letraLida = letras[j].toUpperCase();
+    let vgs = ["A","E","I","O","U"];
+
+    if(!(vgs[0] === letraLida) && !(vgs[1] === letraLida) &&
+       !(vgs[2] === letraLida) && !(vgs[3] === letraLida) &&
+       !(vgs[4] === letraLida)){
+       
+        msg+= letras[j] + " ";
+       quantidade++ 
+    }
+    
+}
+alert(`A quantidade de consoantes é: ${quantidade} e as consoantes elas são ${msg}`);
