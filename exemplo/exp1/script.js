@@ -79,9 +79,7 @@ for (let j = 0; j < letras.length; j++) {
     let letraLida = letras[j].toUpperCase();
     let vgs = ["A","E","I","O","U"];
 
-    if(!(vgs[0] === letraLida) && !(vgs[1] === letraLida) &&
-       !(vgs[2] === letraLida) && !(vgs[3] === letraLida) &&
-       !(vgs[4] === letraLida)){
+    if(!vgs.includes(letraLida)){
        
         msg+= letras[j] + " ";
        quantidade++ 
