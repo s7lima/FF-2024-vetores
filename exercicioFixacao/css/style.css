@@ -1,0 +1,13 @@
+html{
+    background-color: aqua;
+}
+body {
+    background-image: url('img/background-image'); /* Altere o caminho conforme necessário */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+
+.form-group {
+    margin-bottom: 1rem; /* Espaçamento entre os campos */
+}
